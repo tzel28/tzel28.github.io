@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thomas Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                   <img src="images/logo.jpeg" class="logo">
+                    <ul class="list">
+                        <lia><a href="#header">Home</a></lia>
+                        <lia><a href="#about">About</a></lia>
+                        <lia><a href="#portfolio">Portfolio</a></lia>
+                        <lia><a href="#contact">Contact</a></lia>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Software Development</p>
+                    <h1> Hi, I'm <span>Thomas Zelaya</span> <br> from Maryland</h1>
+                </div>
+
+            </div>
+
+        </div>
+       <!---------------------------------about----------------------------------------------------> 
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images\profile_pic.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello everybody! Welcome to my Portfolio page, I'm glad you could make it. My name is Thomas and I'm a college gradute from University of Maryland
+                            Global Campus with a degree in software development. I am dedicated to the quest of developing solutions that leverage on best practice
+                            technologies to deliver over the top user expence. My goal is to become an Application Security Engineer one day where I can combine my love for 
+                            programming to build applications and my desire to be able to protect consumers and organizaions assets from malicious actors. </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <!--<p class="tab-links">Experience</p>-->
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills"> 
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Linux</li>
+                                    <li>SQL</li>
+                                    </ul>
+
+                            </div>
+
+
+                            <div class="tab-contents" id="education"> 
+                                <ul>
+                                    <li><Span>2019</Span> Associates in General Studies</li>
+                                    <li><Span>2023</Span> Bachelor of Science Software Development and Security</li>
+                                    <li><Span>2023</Span> CompTIA Security +</li>
+                                </ul>
+                            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- ----------------------portfolio-------------------------------------------- -->
+        <div id="portfolio">
+            <div class="container"> 
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="images\work-1.png">
+                            <div class="layer"> 
+                                <h3>Weather App</h3> 
+                                <p>This application displays the weather in GUI formart to make it more appleaing to the client. The weather 
+                                    app displays pressure, humdity, description, and feels like
+                                </p>
+                                <a href="https://github.com/tzel28/SmallProjects/blob/main/WeatherApp.py"><i class="fa fa-external-link" aria-hidden="true"></i> </a>
+                                <h5>Python Tkinter</h5>
+                                
+                            </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images\work-2.png">
+                        <div class="layer"> 
+                            <h3>Portfolio</h3> 
+                            <p>This is my first personal website.</p>
+                            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> </a>
+                            <h5>HTML CSS</h5>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images\work-3.png">
+                        <div class="layer"> 
+                            <h3>Port Scanner</h3> 
+                            <p>This is a simple port scanner. It is used to see what ports are open when you input an IP address</p>
+                            <a href="https://github.com/tzel28/SmallProjects/blob/main/port_scanner.py"><i class="fa fa-external-link" aria-hidden="true"></i> </a>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end of work list-->
+                <a href="https://github.com/tzel28/SmallProjects" class="btn">See More</a>
+
+            </div>
+
+        </div>
+        <!-- ------------------------------------------------contact------------------------------------------------------ -->
+        <div id="contact">
+
+            <div class="container"> 
+                <div class="row">
+                    <div class="contact-left"> 
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> thomaszel59@gmail.com</p>
+                        <p><i class="fa fa-phone-square" aria-hidden="true"></i> 240-370-7180</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/thomas-zelaya-9a39b1219/"> <i style="font-size:24px" class="fa">&#xf08c;</i> </a>
+                            <a href="https://github.com/tzel28"><i style="font-size:24px" class="fa">&#xf092;</i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right"> 
+                        <form name="submit-to-google-sheet"> 
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email"  required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+
+                        <span id="msg"></span>
+
+
+                    </div>
+                    
+                    
+>                </div>
+            </div>
+
+            <div class="copyright"> 
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright Thomas. </p>
+            </div>
+
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");                
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby0kZ4yyxUz73p0nlIaUOZ0uESqwcL1UgZwqa15V4GKh9IFVlp7LIshvLxKGToDrhGLYg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML= " Message sent successfully" 
+        setTimeout(function() {
+            msg.innerHTML = ""
+        },5000) 
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
